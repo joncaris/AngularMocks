@@ -1,0 +1,12 @@
+<div>
+    <img class="user-avatar" aria-hidden src="{{user.avatar_url}}" />
+    <span>{{ user.name }}</span>
+    <br>
+    <a mat-button href="{{user.html_url}}" target="blank">
+      <span class="fa fa-github"></span> GITHUB
+    </a>
+    <a mat-button href="{{user.blog}}" target="blank">
+      <span class="fa fa-file-code-o"></span> WEBSITE
+    </a>
+    <span><span class="fa fa-map-marker"></span> {{user.location}}</span>
+</div>

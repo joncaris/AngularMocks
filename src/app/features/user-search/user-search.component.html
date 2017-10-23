@@ -1,0 +1,12 @@
+<div class="top">
+  <mat-card>
+    <app-user-typeahead
+      (userSelected)="selectUser($event)"
+    >
+    </app-user-typeahead>
+  </mat-card>
+</div>
+
+<mat-card *ngIf="user">
+  <app-user [user]="user"></app-user>
+</mat-card>

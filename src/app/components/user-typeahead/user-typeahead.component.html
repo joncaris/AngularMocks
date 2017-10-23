@@ -1,0 +1,17 @@
+<form class="user-typeahead-form">
+  <mat-form-field class="form-field">
+    <input 
+      class="typeahead" 
+      matInput 
+      placeholder="User" 
+      aria-label="User" 
+      [matAutocomplete]="auto" 
+      [formControl]="userControl"
+    >
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="userSelected.emit($event.option.value)">
+      <mat-option *ngFor="let user of filteredUsers | async" [value]="user.login">
+        <app-user-search-item [user]='user'></app-user-search-item>
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

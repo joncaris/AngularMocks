@@ -1,0 +1,14 @@
+.typeahead, .mat-form-field {
+    min-width: 500px;
+    width: 70%;
+}
+
+.user-typeahead-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.user-typeahead-form {
+    width: 100%;
+}
